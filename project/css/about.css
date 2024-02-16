@@ -1,0 +1,144 @@
+/* header */
+
+div.header {
+    display: flex;
+    text-indent: 10px;
+    text-align: center;
+    color: rgb(89, 48, 39);
+    background-color: white;
+}
+
+div.header a {
+    margin-top: 20px;
+    text-indent: 20px;
+    text-decoration: none;
+    color: rgb(89, 48, 39);
+}
+
+div.header a:hover {
+    color: #fcc3ba;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+
+/* body */
+
+body {
+    background-color: #BFA08E;
+    text-align: center;
+    font-family: "Baskerville display PT";
+    display: flex;
+    flex-direction: column;
+}
+
+body img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    border: 100px;
+    border-color: rgb(89, 48, 39);
+}
+
+h2 {
+    background-color: rgba(140, 77, 82, 0.1);
+    margin: auto;
+    width: 600px;
+    height: auto;
+    color: rgb(89, 48, 39);
+}
+
+h1 {
+    color: white;
+    margin-top: 50px;
+}
+
+.main-pic {
+    width: 300px;
+    border-radius: 200px;
+    border-color: rgb(89, 48, 39);
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    /* margin-left: 230px; */
+    justify-items: center;
+}
+
+input,
+select,
+textarea {
+    width: auto;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid;
+}
+
+textarea {
+    height: 200px;
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #8c4d52;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 750px;
+}
+
+input[type="submit"]:hover {
+    background-color: #593027;
+}
+
+.contact-form {
+    border-radius: 60px;
+    background-color: rgba(89, 48, 39, 0.2);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(140, 77, 82);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 28px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
