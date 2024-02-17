@@ -8,12 +8,9 @@ div.header {
   background-color: white;
 }
 
-div.header a {
-  margin-top: 20px;
-  text-indent: 20px;
-  text-decoration: none;
-  color: rgb(89, 48, 39);
-  size: 1.2vw;
+div.header h5 {
+  margin-top: 15px;
+  font-size: 2vw;
 }
 
 div.header a:hover {
@@ -31,8 +28,6 @@ div.header a:hover {
   color: rgb(89, 48, 39);
   margin-top: 20px;
 }
-
-
 
 /* body */
 
@@ -73,20 +68,12 @@ div.jumbotron {
   opacity: 0.9;
 }
 
-div.jumbotron h1 {
-  text-align: left;
-  margin-left: 40px;
-  font-size: 6vw;
-  color: white;
-  margin-top: -40px;
-}
-
 div.stories {
-  height: 400px;
+  height: auto;
   color: white;
   text-align: center;
   background-color: rgb(140, 77, 82);
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 20px;
 }
 
@@ -94,20 +81,19 @@ div.stories-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 20px;
 }
 
 div.stories div img {
   width: auto;
-  max-height: 225px;
-  margin: 20px;
+  max-height: 255px;
+  min-height: 10%;
+  max-width: 100%;
+  margin: 10px;
 }
 
 div.stories a:hover {
   opacity: 0.5;
-}
-
-div.stories h4 {
-  margin-top: 20px;
 }
 
 div.wangari img {
@@ -116,21 +102,27 @@ div.wangari img {
 
 div.impact-child {
   color: rgb(89, 48, 39);
-  height: 350px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
+  max-height: 650px;
+  margin-bottom: 20px;
+}
+
+div.impact-child h1 {
+  font-size: 3vw;
 }
 
 div.impact-child div {
   border: 1px solid;
   margin: 20px;
-  width: 230px;
+  max-width: 430px;
+  min-width: 100px;
   border-radius: 10px;
   border-color: rgb(89, 48, 39);
 }
-
 
 /* footer */
 
@@ -149,6 +141,10 @@ footer img {
   margin: 5px;
 }
 
+footer a img {
+  size: 100%;
+}
+
 footer div {
   display: flex;
   flex-direction: row;
@@ -161,4 +157,101 @@ footer a:hover {
 
 footer h5 {
   margin-top: 20px;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-right: 1px;
+    background-color: #bfa08e;
+  }
+
+  div.jumbotron {
+    color: white;
+    background-color: #fcc3ba;
+    text-size-adjust: auto;
+    background-image: url("../pictures/landing-page/mobile-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    opacity: 0.9;
+    margin-bottom: 10px;
+  }
+
+  div.header h5 {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .stories img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .jumbotron h1 {
+    justify-self: center;
+    font-size: 2em;
+  }
+
+  .stories {
+    margin-bottom: 10px;
+  }
+
+  div.impact-child div {
+    margin-top: 10px;
+    margin: 10px;
+  }
+
+  h4,
+  h5 {
+    font-size: 4vw;
+  }
+
+  div.header a {
+    margin-top: 20px;
+    text-indent: 10px;
+    text-decoration: none;
+    color: rgb(89, 48, 39);
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  div.jumbotron h1 {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 6vw;
+    color: white;
+    margin-top: -40px;
+  }
+
+  div.header a {
+    margin-top: 20px;
+    text-indent: 20px;
+    text-decoration: none;
+    color: rgb(89, 48, 39);
+    font-size: 1.4vw;
+  }
+
+  div.stories h4 {
+    margin-top: 20px;
+    font-size: 1.5vw;
+  }
+
+  div.impact-child h5 {
+    font-size: 1.5vw;
+    margin: 20px;
+  }
+
+  div.impact-child div {
+    border: 1px solid;
+    margin: 2px;
+    margin: 10px;
+    max-width: 430px;
+    min-width: 100px;
+    border-radius: 10px;
+    border-color: rgb(89, 48, 39);
+  }
 }
