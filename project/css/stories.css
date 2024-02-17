@@ -1,0 +1,151 @@
+/* header */
+
+div.header {
+    display: flex;
+    text-indent: 10px;
+    text-align: center;
+    color: rgb(89, 48, 39);
+    background-color: white;
+}
+
+div.header a {
+    margin-top: 20px;
+    text-indent: 20px;
+    text-decoration: none;
+    color: rgb(89, 48, 39);
+    size: 1.20vw;
+}
+
+div.header a:hover {
+    color: #fcc3ba;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.header h4 {
+    color: rgb(89, 48, 39);
+    margin-top: 20px;
+}
+
+
+/* carousel */
+
+.malala-carousel, .maya-carousel {
+    background-color: #59302C;
+    height: 600px;
+    margin-top: 40px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    max-width: 2000px;
+    margin-block: 2rem;
+    margin-inline: auto;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+li {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+    aspect-ratio: 2/1;
+    width: 1050px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    background-color: #59302C;
+}
+
+
+/* body */
+
+body img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    border: 100px;
+    border-color: rgb(89, 48, 39);
+}
+
+h1 {
+    margin-top: 50px;
+    color: white;
+}
+
+h5 {
+    color: rgb(89, 48, 39);
+}
+
+body {
+    background-color: #BFA08E;
+    text-align: center;
+    font-family: "Baskerville display PT";
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* content */
+
+.malala-content h2, .maya-content h2 {
+    background-color: rgba(140, 77, 82, 0.1);
+    Margin: auto;
+    width: 1200px;
+    height: auto;
+}
+
+.malala-content h1, .maya-content h1 {
+    font-family: "Mistrully";
+    color: rgb(255, 255, 255);
+}
+
+/* video */
+.vid {
+    background-color: #59302C;
+}
+
+iframe {
+    margin: 50px;
+    border-radius: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(140, 77, 82);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+footer img {
+    width: 28px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+footer h3 {
+    margin-top: 20px;
+}
